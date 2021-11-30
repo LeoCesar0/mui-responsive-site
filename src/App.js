@@ -1,9 +1,16 @@
-import './App.css';
+import { makeStyles } from "@material-ui/core";
+import Navbar from "./components/NavBar";
+
+const useStyles = makeStyles((theme)=>({
+
+}))
 
 function App() {
+  const classes = useStyles()
+
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Navbar />
     </div>
   );
 }
